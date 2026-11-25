@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hardik Akkera</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfolio of Hardik Akkera, digital marketing specialist in SEO and performance marketing: case studies, campaign strategy and measurement for Google Ads, Meta Ads and SEO.">
+<meta property="og:title" content="Hardik Akkera · SEO & Performance Marketing Portfolio">
+<meta property="og:description" content="Case studies and strategy across Google Ads, Meta Ads, SEO and analytics.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hardik Akkera",
+  "jobTitle": "Digital Marketing Specialist",
+  "description": "Digital marketer focused on SEO and performance marketing.",
+  "knowsAbout": ["Technical SEO","On-page SEO","E-commerce SEO","Schema markup","Google Ads","Performance Max","Google Shopping Ads","Meta Ads","Google Analytics 4","Google Tag Manager","Google Search Console","Google Merchant Center","Answer Engine Optimization","Generative Engine Optimization","Conversion tracking"]
+}
+</script>
+<style>
+/* Layout: a work portfolio. Short intro, then project sheets (overview → strategy map → execution → results), then playbooks and measurement. No calls to action. */
+:root {
+  /* Palette: #606C38 olive · #283618 forest · #FEFAE0 cream · #DDA15E tan · #BC6C25 copper */
+  --bg: #FEFAE0;
+  --surface: #FFFDF2;
+  --surface-2: #F6F0D2;
+  --fg: #283618;
+  --muted: #5F6648;
+  --line: #E9E1BE;
+  --accent: #606C38;
+  --accent-ink: #FEFAE0;
+  --accent-soft: rgba(96, 108, 56, 0.10);
+  --highlight: #BC6C25;
+  --highlight-soft: rgba(188, 108, 37, 0.10);
+  --ink-panel: #283618;
+  --on-ink: #FEFAE0;
+  --on-ink-muted: #CFC9A6;
+  --on-ink-line: rgba(254, 250, 224, 0.16);
+  --shadow: 0 1px 2px rgba(40,54,24,.05), 0 12px 32px -18px rgba(40,54,24,.22);
+
+  --f-display: "Inter Tight", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --wide: 1160px;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #19210F;
+    --surface: #212B15;
+    --surface-2: #29351B;
+    --fg: #FEFAE0;
+    --muted: #BDB898;
+    --line: #36431F;
+    --accent: #A9B66E;
+    --accent-ink: #19210F;
+    --accent-soft: rgba(169, 182, 110, 0.12);
+    --highlight: #DDA15E;
+    --highlight-soft: rgba(221, 161, 94, 0.12);
+    --ink-panel: #2E3E1B;
+    --on-ink: #FEFAE0;
+    --on-ink-muted: #CFC9A6;
+    --on-ink-line: rgba(254, 250, 224, 0.14);
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -18px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #19210F;
+  --surface: #212B15;
+  --surface-2: #29351B;
+  --fg: #FEFAE0;
+  --muted: #BDB898;
+  --line: #36431F;
+  --accent: #A9B66E;
+  --accent-ink: #19210F;
+  --accent-soft: rgba(169, 182, 110, 0.12);
+  --highlight: #DDA15E;
+  --highlight-soft: rgba(221, 161, 94, 0.12);
+  --ink-panel: #2E3E1B;
+  --on-ink: #FEFAE0;
+  --on-ink-muted: #CFC9A6;
+  --on-ink-line: rgba(254, 250, 224, 0.14);
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px -18px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font-family: var(--f-body); font-size: 16px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 60; background: var(--surface);
+}
+a { color: inherit; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+[hidden] { display: none !important; }
+p { margin: 0; }
+ul, ol, dl { margin: 0; }
+.tnum { font-variant-numeric: tabular-nums; }
+
+.wrap { max-width: var(--wide); margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+
+h1, h2, h3, h4 { font-family: var(--f-display); letter-spacing: -.02em; text-wrap: balance; margin: 0; font-weight: 600; }
+h2 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); line-height: 1.15; }
+h3 { font-size: 1.12rem; line-height: 1.3; letter-spacing: -.01em; }
+h4 { font-size: .98rem; line-height: 1.35; letter-spacing: -.005em; }
+.label {
+  font-size: .74rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--highlight);
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.label::before { content: ""; width: 18px; height: 2px; background: currentColor; border-radius: 2px; }
+.kicker { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.lede { color: var(--muted); font-size: 1.04rem; max-width: 64ch; text-wrap: pretty; }
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  backdrop-filter: saturate(1.3) blur(12px); -webkit-backdrop-filter: saturate(1.3) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.nav { display: flex; align-items: center; gap: 20px; height: 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; line-height: 1.2; }
+.brand-mark {
+  width: 32px; height: 32px; border-radius: 8px; display: grid; place-items: center; flex: none;
+  background: var(--accent); color: var(--accent-ink); font: 700 .8rem/1 var(--f-display);
+}
+.brand b { display: block; font-weight: 600; font-size: .96rem; }
+.brand span span { display: block; font-size: .74rem; color: var(--muted); }
+.nav-links { display: flex; gap: 2px; margin-left: auto; list-style: none; padding: 0; }
+.nav-links a {
+  display: block; padding: 8px 12px; border-radius: 6px; text-decoration: none;
+  color: var(--muted); font-size: .9rem; font-weight: 500;
+}
+.nav-links a:hover { color: var(--fg); background: var(--surface-2); }
+.icon-btn {
+  width: 36px; height: 36px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--fg); display: grid; place-items: center; cursor: pointer; flex: none;
+}
+.icon-btn:hover { border-color: var(--muted); }
+.icon-btn svg { width: 17px; height: 17px; }
+.menu-btn { display: none; }
+.mobile-menu { border-top: 1px solid var(--line); padding-block: 6px 16px; }
+.mobile-menu ul { list-style: none; padding: 0; }
+.mobile-menu a { display: block; padding: 12px 2px; text-decoration: none; border-bottom: 1px solid var(--line); font-weight: 500; }
+
+/* ---------- Sections ---------- */
+section { padding-block: clamp(56px, 8vw, 96px); }
+.section-alt { background: var(--surface); border-block: 1px solid var(--line); }
+.section-head { display: grid; gap: 12px; max-width: 700px; margin-bottom: clamp(28px, 4vw, 44px); }
+
+/* ---------- Intro ---------- */
+.intro { padding-block: clamp(44px, 6vw, 72px); background: var(--surface); border-bottom: 1px solid var(--line); }
+.intro-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 64px); align-items: start; }
+.intro-copy { display: grid; gap: 18px; min-width: 0; }
+.intro h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.04; letter-spacing: -.035em; }
+.role { font: 500 clamp(1.05rem, 1.8vw, 1.25rem)/1.4 var(--f-display); color: var(--highlight); letter-spacing: -.01em; }
+.intro .lede { font-size: 1.06rem; }
+.facts { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 8px 32px; margin-top: 6px; }
+.facts dt { font-size: .74rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-weight: 600; }
+.facts dd { margin: 2px 0 0; font-size: .94rem; font-weight: 500; }
+
+.ledger { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); min-width: 0; }
+.ledger-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.ledger-head h2 { font-size: 1rem; letter-spacing: -.01em; }
+.ledger-head span { font-size: .78rem; color: var(--muted); }
+.ledger-row {
+  display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: center;
+  padding: 16px 20px; border-bottom: 1px solid var(--line); text-decoration: none;
+  transition: background .15s;
+}
+.ledger-row:last-child { border-bottom: 0; }
+.ledger-row:hover { background: var(--surface-2); }
+.ledger-row b { font-weight: 600; font-size: .95rem; }
+.ledger-row small { grid-column: 1; font-size: .8rem; color: var(--muted); }
+.ledger-row .fig { grid-row: 1 / span 2; grid-column: 2; text-align: right; font: 600 1.5rem/1.1 var(--f-display); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.ledger-row .fig.hl { color: var(--highlight); }
+.ledger-row .fig small { display: block; font: 400 .74rem/1.3 var(--f-body); letter-spacing: 0; color: var(--muted); }
+
+/* ---------- Projects ---------- */
+.projects { display: grid; gap: 28px; }
+.project { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+.project-top { padding: clamp(22px, 3.2vw, 34px); display: grid; gap: 10px; border-bottom: 1px solid var(--line); }
+.project-top h3 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); letter-spacing: -.025em; }
+.project-top p { color: var(--muted); max-width: 70ch; }
+.meta { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); background: var(--bg); }
+.meta div { padding: 14px clamp(16px, 2.4vw, 24px); border-right: 1px solid var(--line); min-width: 0; }
+.meta div:last-child { border-right: 0; }
+.meta dt { font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.meta dd { margin: 3px 0 0; font-weight: 500; font-size: .92rem; }
+
+.project-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.pcell { padding: clamp(22px, 3.2vw, 34px); display: grid; gap: 14px; align-content: start; min-width: 0; }
+.pcell + .pcell { border-left: 1px solid var(--line); }
+.project-grid + .project-grid { border-top: 1px solid var(--line); }
+.pcell p, .pcell li { color: var(--muted); font-size: .95rem; }
+.pcell ul { padding-left: 18px; display: grid; gap: 6px; }
+.reason { list-style: none; padding: 0 !important; display: grid; gap: 14px !important; }
+.reason li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; }
+.reason li::before {
+  content: ""; width: 8px; height: 8px; margin: 8px 0 0 6px; border-radius: 2px; background: var(--highlight);
+}
+.reason b { color: var(--fg); font-weight: 600; display: block; }
+.stream { display: grid; gap: 8px; }
+.stream h4 { display: flex; align-items: center; gap: 8px; }
+.stream h4 .pill { font: 600 .68rem/1 var(--f-body); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); }
+.stream + .stream { padding-top: 14px; border-top: 1px dashed var(--line); }
+
+/* Strategy map */
+.map { display: grid; gap: 10px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.lane { display: grid; gap: 8px; }
+.lane-label { font-size: .7rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.nodes { display: flex; align-items: stretch; gap: 22px; flex-wrap: wrap; }
+.node {
+  flex: 1 1 110px; min-width: 0; position: relative; padding: 10px 12px; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--line); display: grid; gap: 2px; align-content: start;
+}
+.node b { font-size: .86rem; font-weight: 600; line-height: 1.3; }
+.node span { font-size: .76rem; color: var(--muted); line-height: 1.35; }
+.nodes.chain .node:not(:last-child)::after {
+  content: "→"; position: absolute; right: -18px; top: 50%; transform: translateY(-50%);
+  color: var(--muted); font-size: .9rem;
+}
+.node.out { background: var(--accent); border-color: var(--accent); }
+.node.out b, .node.out span { color: var(--accent-ink); }
+.node.hl { background: var(--highlight-soft); border-color: color-mix(in srgb, var(--highlight) 40%, var(--line)); }
+.node.hl b { color: var(--highlight); }
+.merge { text-align: center; color: var(--muted); font-size: .9rem; line-height: 1; }
+.map-note { font-size: .78rem; color: var(--muted); }
+
+/* Funnel */
+.funnel { display: grid; gap: 6px; justify-items: center; }
+.stage {
+  width: var(--w); max-width: 100%; padding: 12px 16px; border-radius: 8px; text-align: center;
+  background: var(--surface); border: 1px solid var(--line); display: grid; gap: 2px;
+}
+.stage b { font-size: .9rem; }
+.stage span { font-size: .78rem; color: var(--muted); }
+.stage.out { background: var(--accent); border-color: var(--accent); }
+.stage.out b, .stage.out span { color: var(--accent-ink); }
+
+/* Results */
+.results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.res { background: var(--bg); padding: 16px; display: grid; gap: 4px; min-width: 0; }
+.res .v { font: 600 clamp(1.5rem, 2.6vw, 2rem)/1.05 var(--f-display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.res .v.hl { color: var(--highlight); }
+.res .k { font-size: .8rem; color: var(--muted); }
+.note { font-size: .8rem; color: var(--muted); }
+.scope { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.scope div { background: var(--bg); padding: 14px 16px; display: grid; gap: 2px; }
+.scope dt { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.scope dd { margin: 0; font-weight: 500; font-size: .92rem; }
+
+/* ---------- Playbooks ---------- */
+.playbooks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.playbook { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: grid; gap: 16px; align-content: start; }
+.playbook header { display: grid; gap: 6px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.playbook header p { font-size: .9rem; color: var(--muted); }
+.steps { list-style: none; padding: 0; display: grid; gap: 12px; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 26px 1fr; gap: 10px; counter-increment: s; }
+.steps li::before {
+  content: counter(s); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent); font: 600 .74rem/1 var(--f-display);
+}
+.steps b { display: block; font-size: .92rem; font-weight: 600; }
+.steps span { font-size: .84rem; color: var(--muted); }
+
+/* Measurement */
+.measure { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; margin-top: 16px; }
+.stack-map { background: var(--ink-panel); color: var(--on-ink); border-radius: var(--radius); padding: clamp(22px, 3vw, 32px); display: grid; gap: 18px; min-width: 0; }
+.stack-map h3 { color: var(--on-ink); }
+.stack-map > p { color: var(--on-ink-muted); font-size: .92rem; }
+.layers { display: grid; gap: 8px; }
+.layer { display: grid; grid-template-columns: 120px 1fr; gap: 12px; align-items: center; padding: 12px 14px; border: 1px solid var(--on-ink-line); border-radius: 8px; }
+.layer .lname { font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--on-ink-muted); }
+.layer .ltools { display: flex; flex-wrap: wrap; gap: 6px; }
+.layer .ltools span { font-size: .8rem; font-weight: 500; padding: 4px 9px; border-radius: 999px; background: rgba(254,250,224,.08); border: 1px solid var(--on-ink-line); color: var(--on-ink); }
+.layer-arrow { text-align: center; color: var(--on-ink-muted); line-height: 1; font-size: .85rem; }
+.kpis { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px, 3vw, 32px); display: grid; gap: 14px; align-content: start; }
+.kpi-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.kpi-table th, .kpi-table td { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.kpi-table tr:last-child th, .kpi-table tr:last-child td { border-bottom: 0; }
+.kpi-table th { font-weight: 600; width: 42%; padding-right: 12px; }
+.kpi-table td { color: var(--muted); }
+
+/* ---------- Services ---------- */
+.svc-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.svc-list li { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.svc-list h3 { font-size: 1.05rem; }
+.svc-list p { color: var(--muted); font-size: .93rem; }
+
+/* ---------- Skills ---------- */
+.cap-wrap { overflow-x: auto; }
+.cap-table { width: 100%; border-collapse: collapse; background: var(--bg); border: 1px solid var(--line); }
+.cap-table th, .cap-table td { text-align: left; padding: 18px 22px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cap-table tr:last-child th, .cap-table tr:last-child td { border-bottom: 0; }
+.cap-table th { width: 26%; font: 600 1rem/1.4 var(--f-display); }
+.cap-table th span { display: block; font: 400 .84rem/1.5 var(--f-body); color: var(--muted); margin-top: 4px; }
+.cap-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  font-size: .78rem; font-weight: 500; padding: 5px 11px; border-radius: 999px; white-space: nowrap;
+  background: var(--surface); color: var(--fg); border: 1px solid var(--line);
+}
+
+/* ---------- About ---------- */
+.two-col { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.about-text { display: grid; gap: 18px; color: var(--muted); font-size: 1.02rem; max-width: 64ch; }
+.about-text strong { color: var(--fg); font-weight: 600; }
+.values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 6px; }
+.value { border-top: 2px solid var(--highlight); padding-top: 12px; display: grid; gap: 4px; }
+.value h3 { font-size: .98rem; }
+.value p { font-size: .88rem; color: var(--muted); }
+
+/* ---------- Footer ---------- */
+footer { border-top: 1px solid var(--line); padding-block: 24px 36px; color: var(--muted); font-size: .86rem; background: var(--surface); }
+.foot { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .playbooks { grid-template-columns: 1fr 1fr; }
+  .playbooks .playbook:last-child { grid-column: span 2; }
+}
+@media (max-width: 880px) {
+  .intro-grid, .two-col, .project-grid, .measure { grid-template-columns: 1fr; }
+  .pcell + .pcell { border-left: 0; border-top: 1px solid var(--line); }
+  .meta { grid-template-columns: 1fr 1fr; }
+  .meta div:nth-child(2) { border-right: 0; }
+  .meta div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+}
+@media (max-width: 640px) {
+  .playbooks, .svc-list, .values { grid-template-columns: 1fr; }
+  .playbooks .playbook:last-child { grid-column: auto; }
+  .facts { grid-template-columns: 1fr 1fr; }
+  .nodes { flex-direction: column; gap: 18px; }
+  .nodes.chain .node:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -17px; transform: translateX(-50%); }
+  .node { flex: none; }
+  .layer { grid-template-columns: 1fr; gap: 8px; }
+  .cap-table, .cap-table tbody, .cap-table tr, .cap-table th, .cap-table td { display: block; width: 100%; }
+  .cap-table th { border-bottom: 0; padding-bottom: 8px; }
+  .cap-table td { padding-top: 0; }
+}
+@media (max-width: 420px) {
+  .results { grid-template-columns: 1fr; }
+  .scope { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Hardik Akkera, top of page">
+        <span class="brand-mark">HA</span>
+        <span><b>Hardik Akkera</b><span>SEO &amp; Performance Marketing</span></span>
+      </a>
+      <div class="nav-tools" style="margin-left:auto">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch color theme">
+          <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div class="intro-copy">
+      <h1>Hardik Akkera</h1>
+      <p class="role">Digital Marketing Specialist · SEO &amp; Performance Marketing</p>
+      <p class="lede">I plan and run SEO, Google Ads and Meta Ads for businesses that need visibility to turn into enquiries and sales. This portfolio shows the work: what each client needed, the strategy I chose, how it was executed, and what it returned.</p>
+      <dl class="facts">
+        <div><dt>Channels</dt><dd>SEO · Google Ads · Meta Ads</dd></div>
+        <div><dt>Industries</dt><dd>E-commerce · Real estate · B2B tech</dd></div>
+        <div><dt>Measurement</dt><dd>GA4 · GTM · Search Console</dd></div>
+      </dl>
+    </div>
+
+    <div class="ledger" aria-label="Results index">
+      <div class="ledger-head"><h2>Results index</h2><span>Approximate figures, USD</span></div>
+      <a class="ledger-row" href="#liquor">
+        <b>Liquor e-commerce</b><small>Google Ads · Search, Shopping, PMax</small>
+        <span class="fig hl">≈30×<small>ROAS</small></span>
+      </a>
+      <a class="ledger-row" href="#liquor">
+        <b>Liquor e-commerce</b><small>On ~$600 monthly ad spend</small>
+        <span class="fig">~$18K<small>revenue / month</small></span>
+      </a>
+      <a class="ledger-row" href="#realestate">
+        <b>Real estate · India</b><small>Meta Ads · ~$500 over one month</small>
+        <span class="fig hl">15<small>leads</small></span>
+      </a>
+      <a class="ledger-row" href="#odoo">
+        <b>Odoo / B2B technology</b><small>Google Ads · Meta Ads · SEO</small>
+        <span class="fig" style="font-size:1rem">Lead gen<small>full-funnel scope</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Selected work</span>
+      <h2>Case studies</h2>
+      <p class="lede">Each project is laid out the same way: the objective, the strategy behind it, the execution, and the result. Paid ads and SEO were run as separate workstreams.</p>
+    </div>
+
+    <div class="projects">
+
+      <!-- LIQUOR -->
+      <article class="project" id="liquor">
+        <div class="project-top">
+          <span class="kicker">E-commerce</span>
+          <h3>Liquor e-commerce: ≈30× ROAS from a lean Google Ads budget</h3>
+          <p>An online liquor store that needed more sales from Google without a large budget. Paid search was built around purchases and revenue, and SEO ran alongside as a separate, longer-term channel.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Industry</dt><dd>Liquor retail, online</dd></div>
+          <div><dt>Channels</dt><dd>Google Ads · SEO</dd></div>
+          <div><dt>Ad spend</dt><dd class="tnum">~$600 / month</dd></div>
+          <div><dt>Primary KPI</dt><dd>ROAS</dd></div>
+        </dl>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Strategy</span>
+            <ul class="reason">
+              <li><div><b>Cover every way people shop on Google</b>Search Ads catch people searching for specific products. Shopping Ads put the product, price and image in front of them. Performance Max extends the same products across Google's other placements.</div></li>
+              <li><div><b>Optimize for revenue, not clicks</b>Purchases were tracked as conversions, so the campaigns could be judged and optimized on the revenue they brought in.</div></li>
+              <li><div><b>Keep paid and organic separate</b>Ads drive sales now; SEO builds organic visibility for the store over time.</div></li>
+            </ul>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Strategy map</span>
+            <div class="map" role="img" aria-label="Search, Shopping and Performance Max campaigns feed purchase tracking, which drives revenue optimization. SEO runs as a separate organic lane.">
+              <div class="lane">
+                <span class="lane-label">Paid · Google Ads</span>
+                <div class="nodes">
+                  <div class="node"><b>Search Ads</b><span>High-intent product queries</span></div>
+                  <div class="node"><b>Shopping Ads</b><span>Product, price, image</span></div>
+                  <div class="node"><b>Performance Max</b><span>Wider Google reach</span></div>
+                </div>
+              </div>
+              <div class="merge">↓</div>
+              <div class="nodes chain">
+                <div class="node"><b>Purchase tracking</b><span>Conversions with value</span></div>
+                <div class="node out"><b>≈30× ROAS</b><span>~$18K on ~$600 / month</span></div>
+              </div>
+              <div class="lane" style="margin-top:6px">
+                <span class="lane-label">Organic · SEO</span>
+                <div class="nodes chain">
+                  <div class="node"><b>E-commerce SEO</b><span>Store and product pages</span></div>
+                  <div class="node hl"><b>Organic visibility</b><span>Long-term channel</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Execution</span>
+            <div class="stream">
+              <h4><span class="pill">Paid</span>Google Ads</h4>
+              <ul>
+                <li>Search campaigns for high-intent product searches</li>
+                <li>Shopping and Performance Max campaigns on the store's product feed</li>
+                <li>Purchase conversion tracking</li>
+              </ul>
+            </div>
+            <div class="stream">
+              <h4><span class="pill">Organic</span>SEO</h4>
+              <ul><li>E-commerce SEO for the online store</li></ul>
+            </div>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Google Ads results</span>
+            <div class="results">
+              <div class="res"><span class="v">~$600</span><span class="k">Ad spend / month</span></div>
+              <div class="res"><span class="v">~$18K</span><span class="k">Revenue / month</span></div>
+              <div class="res"><span class="v hl">≈30×</span><span class="k">ROAS</span></div>
+            </div>
+            <p class="note">Revenue as attributed by the ad platform. ROAS = revenue ÷ spend.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- REAL ESTATE -->
+      <article class="project" id="realestate">
+        <div class="project-top">
+          <span class="kicker">Real estate · India</span>
+          <h3>Real estate: 15 leads in one month from ~$500 on Meta</h3>
+          <p>A real estate project in India that needed both visibility and enquiries within a one-month window and a small budget.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Market</dt><dd>India</dd></div>
+          <div><dt>Channel</dt><dd>Meta Ads</dd></div>
+          <div><dt>Budget</dt><dd class="tnum">~$500 · one month</dd></div>
+          <div><dt>Primary KPI</dt><dd>Cost per lead</dd></div>
+        </dl>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Strategy</span>
+            <ul class="reason">
+              <li><div><b>Build awareness and capture demand together</b>Awareness campaigns made the project familiar to the target audience, while lead-generation campaigns asked interested people to enquire.</div></li>
+              <li><div><b>Judge spend by cost per lead</b>With a fixed one-month budget, every decision came back to how many enquiries each dollar produced.</div></li>
+            </ul>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Strategy map</span>
+            <div class="map" role="img" aria-label="Funnel: awareness campaigns, then lead generation campaigns, resulting in 15 leads at about 33 dollars each">
+              <div class="funnel">
+                <div class="stage" style="--w:100%"><b>Awareness campaigns</b><span>Reach the target audience</span></div>
+                <div class="stage" style="--w:78%"><b>Lead-generation campaigns</b><span>Capture enquiries</span></div>
+                <div class="stage out" style="--w:56%"><b>15 leads</b><span>≈$33 per lead</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Execution</span>
+            <div class="stream">
+              <h4><span class="pill">Paid</span>Meta Ads</h4>
+              <ul>
+                <li>Awareness campaigns for reach</li>
+                <li>Lead-generation campaigns for enquiries</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Results</span>
+            <div class="results">
+              <div class="res"><span class="v">~$500</span><span class="k">Budget, one month</span></div>
+              <div class="res"><span class="v hl">15</span><span class="k">Leads</span></div>
+              <div class="res"><span class="v">≈$33</span><span class="k">Cost per lead</span></div>
+            </div>
+            <p class="note">Cost per lead = budget ÷ leads.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ODOO -->
+      <article class="project" id="odoo">
+        <div class="project-top">
+          <span class="kicker">B2B technology</span>
+          <h3>Odoo / B2B technology: paid and organic search working toward leads</h3>
+          <p>An Odoo-focused technology business selling to other businesses. Buyers research before they get in touch, so the plan combined paid ads for immediate visibility with SEO for lasting organic presence.</p>
+        </div>
+        <dl class="meta">
+          <div><dt>Industry</dt><dd>B2B technology · Odoo</dd></div>
+          <div><dt>Channels</dt><dd>Google Ads · Meta Ads · SEO</dd></div>
+          <div><dt>Sales model</dt><dd>Enquiry-led</dd></div>
+          <div><dt>Primary KPI</dt><dd>Leads</dd></div>
+        </dl>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Strategy</span>
+            <ul class="reason">
+              <li><div><b>Paid for reach now, SEO for lasting presence</b>Ads put the business in front of buyers straight away, while SEO built organic visibility that keeps working without ongoing spend.</div></li>
+              <li><div><b>Two ad platforms, two roles</b>Google Ads reaches people actively searching; Meta Ads reaches audiences on Facebook and Instagram before they search.</div></li>
+              <li><div><b>SEO built around services and buyer intent</b>Technical fixes first, then keyword research mapped to services, then service pages optimized to answer buyer questions.</div></li>
+            </ul>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Strategy map</span>
+            <div class="map" role="img" aria-label="Paid lane with Google Ads and Meta Ads, organic lane with technical SEO, keywords and service pages, both leading to enquiries">
+              <div class="lane">
+                <span class="lane-label">Paid</span>
+                <div class="nodes">
+                  <div class="node"><b>Google Ads</b><span>Active searchers</span></div>
+                  <div class="node"><b>Meta Ads</b><span>Facebook &amp; Instagram</span></div>
+                </div>
+              </div>
+              <div class="lane">
+                <span class="lane-label">Organic · SEO</span>
+                <div class="nodes chain">
+                  <div class="node"><b>Technical SEO</b><span>Crawl &amp; index</span></div>
+                  <div class="node"><b>Keywords</b><span>Mapped to services</span></div>
+                  <div class="node"><b>Service pages</b><span>Answer buyer questions</span></div>
+                </div>
+              </div>
+              <div class="merge">↓</div>
+              <div class="nodes"><div class="node out"><b>Enquiries</b><span>Qualified B2B leads</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-grid">
+          <div class="pcell">
+            <span class="kicker">Execution</span>
+            <div class="stream">
+              <h4><span class="pill">Paid</span>Google Ads &amp; Meta Ads</h4>
+              <ul>
+                <li>Google Ads campaigns</li>
+                <li>Meta Ads campaigns</li>
+              </ul>
+            </div>
+            <div class="stream">
+              <h4><span class="pill">Organic</span>SEO</h4>
+              <ul>
+                <li>SEO strategy prioritized by commercial intent</li>
+                <li>Technical SEO</li>
+                <li>Keyword research</li>
+                <li>Content and service-page optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pcell">
+            <span class="kicker">Scope delivered</span>
+            <dl class="scope">
+              <div><dt>Google Ads</dt><dd>Campaigns</dd></div>
+              <div><dt>Meta Ads</dt><dd>Campaigns</dd></div>
+              <div><dt>SEO strategy</dt><dd>Lead-focused roadmap</dd></div>
+              <div><dt>Technical SEO</dt><dd>Site health</dd></div>
+              <div><dt>Keyword research</dt><dd>Service mapping</dd></div>
+              <div><dt>Content</dt><dd>Service pages</dd></div>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section id="strategy" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Strategy</span>
+      <h2>How I plan each channel</h2>
+      <p class="lede">The working order I follow for SEO, Google Ads and Meta Ads. Tracking comes before spend, and every channel is measured against a business number.</p>
+    </div>
+
+    <div class="playbooks">
+      <article class="playbook">
+        <header><h3>SEO</h3><p>Visibility that compounds over time.</p></header>
+        <ol class="steps">
+          <li><div><b>Technical foundation</b><span>Crawling, indexing and site speed</span></div></li>
+          <li><div><b>Keyword and intent mapping</b><span>Which page answers which search</span></div></li>
+          <li><div><b>Page optimization</b><span>Content, service and product pages</span></div></li>
+          <li><div><b>Structured data</b><span>Schema / JSON-LD for rich results</span></div></li>
+          <li><div><b>AEO / GEO</b><span>Visibility in AI-generated answers</span></div></li>
+          <li><div><b>Measure</b><span>Search Console and GA4</span></div></li>
+        </ol>
+      </article>
+      <article class="playbook">
+        <header><h3>Google Ads</h3><p>Capture demand and spend toward revenue.</p></header>
+        <ol class="steps">
+          <li><div><b>Conversion tracking</b><span>GTM, GA4 and Google Ads conversions</span></div></li>
+          <li><div><b>Structure by intent</b><span>Separate product, brand and generic searches</span></div></li>
+          <li><div><b>Product feed</b><span>Merchant Center for Shopping and PMax</span></div></li>
+          <li><div><b>Campaign mix</b><span>Search, Shopping and Performance Max</span></div></li>
+          <li><div><b>Bid toward value</b><span>Optimize for conversions and revenue</span></div></li>
+          <li><div><b>Review</b><span>ROAS, search terms and budget shifts</span></div></li>
+        </ol>
+      </article>
+      <article class="playbook">
+        <header><h3>Meta Ads</h3><p>Create demand and turn it into leads.</p></header>
+        <ol class="steps">
+          <li><div><b>Audience and offer</b><span>Who to reach and what to say</span></div></li>
+          <li><div><b>Awareness</b><span>Build familiarity with the brand or project</span></div></li>
+          <li><div><b>Lead generation</b><span>Campaigns built to collect enquiries</span></div></li>
+          <li><div><b>Cost per lead</b><span>Track what each lead costs</span></div></li>
+          <li><div><b>Lead quality</b><span>Check which leads turn into real conversations</span></div></li>
+          <li><div><b>Reallocate</b><span>Move budget to what performs</span></div></li>
+        </ol>
+      </article>
+    </div>
+
+    <div class="measure">
+      <div class="stack-map">
+        <h3>Measurement setup</h3>
+        <p>How data flows from the website to the ad platforms, so each campaign optimizes on real outcomes.</p>
+        <div class="layers" role="img" aria-label="Website events flow through Google Tag Manager into GA4 and the ad platforms; Search Console and Merchant Center cover organic search and product feeds">
+          <div class="layer"><span class="lname">Collect</span><div class="ltools"><span>Website events</span><span>Google Tag Manager</span></div></div>
+          <div class="layer-arrow">↓</div>
+          <div class="layer"><span class="lname">Analyze</span><div class="ltools"><span>Google Analytics 4</span><span>Search Console</span></div></div>
+          <div class="layer-arrow">↓</div>
+          <div class="layer"><span class="lname">Optimize</span><div class="ltools"><span>Google Ads conversions</span><span>Meta Ads</span><span>Merchant Center</span></div></div>
+        </div>
+      </div>
+      <div class="kpis">
+        <h3>What I report on</h3>
+        <table class="kpi-table">
+          <tbody>
+            <tr><th scope="row">E-commerce</th><td>Revenue, ROAS, purchases</td></tr>
+            <tr><th scope="row">Lead generation</th><td>Leads, cost per lead, lead quality</td></tr>
+            <tr><th scope="row">SEO</th><td>Organic clicks, impressions, rankings, organic conversions</td></tr>
+            <tr><th scope="row">Website</th><td>Conversion rate by channel and landing page</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Services</span>
+      <h2>What I work on</h2>
+    </div>
+    <ul class="svc-list">
+      <li><h3>SEO &amp; Technical SEO</h3><p>Technical fixes, on-page optimization, Schema / JSON-LD and AEO / GEO.</p></li>
+      <li><h3>Google Ads</h3><p>Search, Shopping and Performance Max campaigns optimized for conversions and revenue.</p></li>
+      <li><h3>Meta Ads</h3><p>Awareness and lead-generation campaigns on Facebook and Instagram.</p></li>
+      <li><h3>E-commerce Marketing</h3><p>Merchant Center feeds, Shopping campaigns and e-commerce SEO.</p></li>
+      <li><h3>Analytics &amp; Tracking</h3><p>GA4, Google Tag Manager, Search Console and conversion tracking.</p></li>
+      <li><h3>SEO Audits &amp; Strategy</h3><p>Technical and on-page audits, keyword research and a prioritized roadmap.</p></li>
+      <li><h3>B2B &amp; Technology Marketing</h3><p>Paid and organic search for businesses with enquiry-led sales.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Skills</span>
+      <h2>Capabilities and tools</h2>
+    </div>
+    <div class="cap-wrap">
+      <table class="cap-table">
+        <tbody>
+          <tr>
+            <th scope="row">Search &amp; SEO<span>Organic visibility</span></th>
+            <td><div class="cap-list"><span class="tag">Technical SEO</span><span class="tag">On-page SEO</span><span class="tag">E-commerce SEO</span><span class="tag">Schema / JSON-LD</span><span class="tag">AEO / GEO</span><span class="tag">Keyword research</span></div></td>
+          </tr>
+          <tr>
+            <th scope="row">Paid Media<span>Performance campaigns</span></th>
+            <td><div class="cap-list"><span class="tag">Google Search Ads</span><span class="tag">Performance Max</span><span class="tag">Shopping Ads</span><span class="tag">Meta Ads</span><span class="tag">Google Merchant Center</span></div></td>
+          </tr>
+          <tr>
+            <th scope="row">Analytics &amp; Tracking<span>Measurement</span></th>
+            <td><div class="cap-list"><span class="tag">Google Analytics 4</span><span class="tag">Google Tag Manager</span><span class="tag">Google Search Console</span><span class="tag">Conversion tracking</span><span class="tag">Conversion optimization</span></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap two-col">
+    <div class="section-head" style="margin-bottom:0">
+      <span class="label">About</span>
+      <h2>Technical, data-driven, focused on outcomes</h2>
+    </div>
+    <div class="about-text">
+      <p><strong>I work across SEO, paid media and analytics</strong>, because growth problems usually sit between them: a website search engines struggle to crawl, ads that spend without converting, or tracking that can't show which channel is paying off.</p>
+      <p>I have run Google Ads and SEO for a liquor e-commerce store, Google Ads, Meta Ads and SEO for an Odoo-focused B2B technology company, and Meta lead-generation campaigns for real estate in India. I set up GA4, Google Tag Manager and conversion tracking myself, so reporting reflects what actually happened.</p>
+      <div class="values">
+        <div class="value"><h3>Revenue first</h3><p>Rankings and clicks count when they lead to sales or enquiries.</p></div>
+        <div class="value"><h3>Accurate tracking</h3><p>Conversions are measured correctly before budgets are scaled.</p></div>
+        <div class="value"><h3>Clear reporting</h3><p>What was spent, what it returned and what comes next.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Hardik Akkera</span>
+    <span>Digital Marketing Specialist · SEO &amp; Performance Marketing</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  var sun = document.getElementById("iconSun"), moon = document.getElementById("iconMoon");
+  function isDark() {
+    var t = root.getAttribute("data-theme");
+    if (t) return t === "dark";
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+  function syncIcon() { var d = isDark(); sun.hidden = !d; moon.hidden = d; }
+  try { var saved = localStorage.getItem("ha-theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+  syncIcon();
+  document.getElementById("themeToggle").addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("ha-theme", next); } catch (e) {}
+    syncIcon();
+  });
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", syncIcon);
+  }
+})();
+</script>
+</body>
+</html>
